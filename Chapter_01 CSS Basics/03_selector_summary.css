@@ -1,0 +1,35 @@
+/* 1 - Element Selector: Applies red color to all <h1> elements */
+h1 {
+    color: red;
+}
+
+/* 2 - Element Selector: Applies background color to all <div> elements */
+div {
+    background-color: antiquewhite;
+}
+
+/* 3 - ID Selector: Used to style a specific element with id="orange" */
+#orange {
+    color: white;
+    background-color: orange;
+}
+
+/* 4 - Class Selector: Applies styles to elements with class "blue" and all <h3> elements */
+.blue, 
+h3 {
+    background-color: blue;
+    color: rgb(0, 255, 170); /* Cyan-green text color */
+    border: 2px solid black;
+}
+
+/* 5 - Universal Selector: Removes default margins and paddings from all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* select <p class="red"> */
+p.red {
+  color: red;
+}

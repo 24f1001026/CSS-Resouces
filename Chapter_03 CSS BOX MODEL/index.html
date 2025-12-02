@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Sizing Example</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      border: 5px solid blue;
+      background-color: lightgray;
+      margin: 10px;
+    }
+
+    .content-box {
+      box-sizing: content-box; /* default behavior */
+    }
+
+    .border-box {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Box Sizing Demo</h2>
+
+  <div class="container">
+    <div class="box content-box">
+      <strong>content-box</strong><br>
+      Actual size = 200px + padding + border
+    </div>
+
+    <div class="box border-box">
+      <strong>border-box</strong><br>
+      Actual size = 200px (includes padding & border)
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Tutorial Chapter 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f7f9;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #3498db;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .example {
+            background-color: #f9f9f9;
+            border-left: 4px solid #2ecc71;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Tutorial</h1>
+
+    <div class="section">
+        <h2>What is CSS?</h2>
+        <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML or XML. CSS defines how elements should be displayed on screen, paper, or in other media.</p>
+    </div>
+
+    <div class="section">
+        <h2>DOM Properties in CSS</h2>
+        <p>The DOM (Document Object Model) represents the HTML document as a tree structure. CSS can be used to style elements in the DOM using:</p>
+        <ul>
+            <li><strong>Element selectors</strong> (e.g., <code>p</code>)</li>
+            <li><strong>ID selectors</strong> (e.g., <code>#header</code>)</li>
+            <li><strong>Class selectors</strong> (e.g., <code>.menu</code>)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>HTML ID and Class</h2>
+        <p><strong>ID:</strong> Used to identify a single unique element. Defined with <code>id</code> attribute.</p>
+        <div class="example">
+            <code>&lt;div id="main"&gt;Content&lt;/div&gt;</code>
+        </div>
+        <p><strong>Class:</strong> Used to define a group of elements. Defined with <code>class</code> attribute.</p>
+        <div class="example">
+            <code>&lt;p class="intro"&gt;This is an intro paragraph&lt;/p&gt;</code>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>How to Add CSS to HTML</h2>
+        <p>There are three main ways to apply CSS:</p>
+        <ol>
+            <li><strong>Inline CSS</strong> – within the HTML element using <code>style</code> attribute.</li>
+            <div class="example">
+                <code>&lt;p style="color: red;"&gt;Hello&lt;/p&gt;</code>
+            </div>
+
+            <li><strong>Internal CSS</strong> – inside a <code>&lt;style&gt;</code> tag in the HTML <code>&lt;head&gt;</code>.</li>
+            <div class="example">
+                <code>
+                    &lt;style&gt;<br>
+                    &nbsp;&nbsp;p { color: blue; }<br>
+                    &lt;/style&gt;
+                </code>
+            </div>
+
+            <li><strong>External CSS</strong> – in a separate <code>.css</code> file linked via <code>&lt;link&gt;</code> tag.</li>
+            <div class="example">
+                <code>
+                    &lt;link rel="stylesheet" href="styles.css"&gt;
+                </code>
+            </div>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>CSS Selectors</h2>
+        <p>CSS selectors are used to "select" the HTML elements you want to style.</p>
+        <ul>
+            <li><strong>Universal selector:</strong> <code>*</code></li>
+            <li><strong>Element selector:</strong> <code>p</code>, <code>h1</code></li>
+            <li><strong>Class selector:</strong> <code>.classname</code></li>
+            <li><strong>ID selector:</strong> <code>#idname</code></li>
+            <li><strong>Group selector:</strong> <code>h1, p, div</code></li>
+            <li><strong>Descendant selector:</strong> <code>div p</code></li>
+            <li><strong>Child selector:</strong> <code>div > p</code></li>
+            <li><strong>Attribute selector:</strong> <code>input[type="text"]</code></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>CSS Comments</h2>
+        <p>CSS comments are used to explain the code and are ignored by browsers. They are written like this:</p>
+        <div class="example">
+            <code>/* This is a CSS comment */</code>
+        </div>
+    </div>
+</body>
+</html>

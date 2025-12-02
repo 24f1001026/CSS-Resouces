@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 300px;
+      height: 150px;
+      border: 10px solid black;
+      padding: 20px;
+      background-color: orange;
+      background-image: url("https://picsum.photos/100");
+      background-repeat: no-repeat;
+      background-size: 100px;
+      margin-bottom: 20px;
+    }
+
+    .border-box {
+      background-clip: border-box;
+    }
+
+    .padding-box {
+      background-clip: padding-box;
+    }
+
+    .content-box {
+      background-clip: content-box;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box border-box">background-clip: border-box</div>
+  <div class="box padding-box">background-clip: padding-box</div>
+  <div class="box content-box">background-clip: content-box</div>
+
+</body>
+</html>

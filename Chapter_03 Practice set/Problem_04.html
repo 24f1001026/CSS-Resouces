@@ -1,0 +1,82 @@
+<!-- Add the box-sizing property to the content box. What changes did you notice? -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0">
+    <title>Problem 01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 2px solid black;
+            height: 66px;
+            background-color: aquamarine;
+            color: white;
+
+
+        }
+
+        .content {
+            background-color: red;
+            height: 90vh;
+            padding: 20px;
+            margin: 50px;
+        }
+
+        footer {
+            background-color: blue;
+            margin: 30px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicin
+            elit. Molestiae adipisci, voluptates tempora moll
+            ad
+            nesciunt qui placeat corrupti labore commodi dolo
+            neque vel aut officia voluptate odit reprehenderi
+            aspernatur explicabo hic voluptatum perferendis
+            quidem. Quis, nesciunt. Tempore, tempora cupidita
+            atque et
+            molestias voluptates. Blanditiis, quis.
+        </div>
+    </main>
+
+    <footer>
+        <b>
+            <p class="text-center">
+                Copyright reserved to &copy; Ayush kumar Singh
+                2025
+            </p>
+        </b>
+    </footer>
+</body>
+
+</html>
+
+

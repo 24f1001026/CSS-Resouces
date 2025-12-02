@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 300px;
+      height: 200px;
+      border: 10px solid black;
+      padding: 30px;
+      background-image: url("https://picsum.photos/100");
+      background-repeat: no-repeat;
+      background-size: 100px 100px;
+      margin-bottom: 20px;
+    }
+
+    .border-box {
+      background-origin: border-box;
+    }
+
+    .padding-box {
+      background-origin: padding-box;
+    }
+
+    .content-box {
+      background-origin: content-box;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box border-box">background-origin: border-box</div>
+  <div class="box padding-box">background-origin: padding-box</div>
+  <div class="box content-box">background-origin: content-box</div>
+
+</body>
+</html>
