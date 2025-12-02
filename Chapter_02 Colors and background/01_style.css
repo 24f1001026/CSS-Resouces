@@ -10,5 +10,6 @@
 
 .green {
     color: rgb(0, 0, 0);
-    background: #31dd3d;
+    /* background: #31dd3d; */
+      color: rgba(255, 0, 0, 0.5);
 }
